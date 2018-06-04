@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder()
+@Builder
 public class Complaint {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

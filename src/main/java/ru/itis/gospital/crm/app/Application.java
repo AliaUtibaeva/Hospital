@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * 14.04.2018
@@ -15,7 +16,8 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
  */
 @SpringBootApplication
 @ComponentScan("ru.itis.gospital.crm")
-@EntityScan(basePackages = "ru.itis.gospital.crm.models", basePackageClasses = Jsr310JpaConverters.class)
+@EntityScan(basePackages = "ru.itis.gospital.crm.models"/*, basePackageClasses = Jsr310JpaConverters.class*/)
+@EnableJpaRepositories(basePackages = "ru.itis.gospital.crm.repositories")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

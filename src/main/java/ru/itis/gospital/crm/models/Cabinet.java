@@ -16,7 +16,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder()
+@Builder
 public class Cabinet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

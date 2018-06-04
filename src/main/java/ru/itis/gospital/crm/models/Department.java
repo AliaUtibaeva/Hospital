@@ -17,7 +17,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder()
+@Builder
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
