@@ -34,6 +34,6 @@ public class Department {
     private Cabinet cabinet;
 
     @OneToMany(mappedBy = "department")
-    private List<User> doctors;
+    private List<Doctor> doctors;
 }
 
